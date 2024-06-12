@@ -14,7 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
+      <GoogleTagManager gtmId="G-2VZJJ6N2E5" />
       <body className="min-h-screen flex flex-col bg-gradient-to-b from-purple-100 to-white">
         <div className="flex-grow flex flex-col">{children}</div>
         <footer className="text-center py-4 w-full bg-purple-700 text-white rounded-t-lg">
@@ -26,7 +27,6 @@ export default function RootLayout({
           </p>
         </footer>
       </body>
-      <GoogleTagManager gtmId="G-2VZJJ6N2E5" />
     </html>
   );
 }
