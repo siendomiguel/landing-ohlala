@@ -1,4 +1,5 @@
 import BackButton from '../../components/back-button';
+import Image from 'next/image';
 
 export default function PaymentMethods() {
   return (
@@ -7,9 +8,9 @@ export default function PaymentMethods() {
         <p>Nuestros metodos de pago</p>
       </div>
       <span className="text-center mt-5">
-        Por el momento solo contados con Efectivo y transferencia a Bancolombia
-        y Davivienda
+        Por el momento solo contados con Efectivo y transferencia a Bancolombia, Nequi y Davivienda.
       </span>
+      <Image src="/Nequi-Ohlala.png" alt="bancolombia" width={700} height={700}></Image>
       <BackButton />
     </main>
   );

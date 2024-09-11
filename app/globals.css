@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  @apply bg-gradient-to-b from-purple-100 to-white;
+  background: linear-gradient(to bottom, theme('colors.purple.100'), white);
 }
 
 main {
