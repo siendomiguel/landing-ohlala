@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { GoogleTagManager } from '@next/third-parties/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
 
 import './globals.css';
 
@@ -27,8 +28,7 @@ export default function RootLayout({
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WDTVXHCM');`,
-        }}
-      ></Script>
+        }}></Script>
 
       <body className="min-h-screen flex flex-col bg-gradient-to-b from-purple-100 to-white">
         <div className="flex-grow flex flex-col">{children}</div>
@@ -36,10 +36,9 @@ export default function RootLayout({
           <p className="text-xs">
             Desarrollado por <a href="https://siendomiguel.com">Miguel Lares</a>
           </p>
-          <p className="text-xs">
-            Derechos reservados Ohlala - Estudio de belleza ©2024
-          </p>
+          <p className="text-xs">Derechos reservados Ohlala - Estudio de belleza ©2024</p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
