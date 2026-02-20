@@ -20,26 +20,21 @@ const StarIcon = () => (
 
 export default function Services() {
   return (
-    <main className="flex flex-col items-center justify-center flex-grow p-8 bg-gradient-to-b from-purple-100 to-white">
-      <div className="block text-center bg-white text-purple-700 py-4 px-8 rounded-lg shadow-md hover:bg-purple-50 transition cursor-pointer">
-        <p>Nuestros servicios</p>
+    <div className="flex flex-col space-y-6 w-full">
+      <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
+        <h2 className="text-xl font-bold">Nuestros servicios</h2>
       </div>
-      {/*       <div className="bg-purple-400 hover:bg-purple-500 text-white font-bold py-4 px-4 rounded-lg shadow-md transition duration-300 ease-in-out flex flex-col items-center justify-center">
-        <p>Hola</p>
-      </div> */}
-      <div className=" w-full max-w-sm block text-center mt-5">
-        <div className="grid grid-cols-2 m:grid-cols-3 md:grid-cols-1 gap-4 mb-16">
-          {servicios.map(servicio => (
-            <div
-              key={servicio}
-              className="bg-purple-400 hover:bg-purple-500 text-white font-bold py-4 rounded-lg shadow-md transition duration-300 ease-in-out flex flex-col items-center justify-center">
-              {/*<StarIcon />*/}
-              <span>{servicio}</span>
-            </div>
-          ))}
-        </div>
+
+      <div className="grid grid-cols-2 gap-4 pb-8">
+        {servicios.map(servicio => (
+          <div
+            key={servicio}
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-white/50 hover:bg-white hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer">
+            <span className="font-semibold text-gray-800 group-hover:text-purple-700 transition-colors">{servicio}</span>
+          </div>
+        ))}
       </div>
       <BackButton />
-    </main>
+    </div>
   );
 }

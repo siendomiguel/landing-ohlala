@@ -2,19 +2,30 @@ import BackButton from '../../components/back-button';
 
 export default function Horarios() {
   return (
-    <main className="flex flex-col items-center justify-center flex-grow p-8 bg-gradient-to-b from-purple-100 to-white">
-      <div className="block text-center bg-white text-purple-700 py-4 px-8 rounded-lg shadow-md hover:bg-purple-50 transition cursor-pointer">
-        <p>Nuestro horario de atención</p>
+    <div className="flex flex-col space-y-6 w-full pb-8">
+      <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
+        <h2 className="text-xl font-bold">Nuestro horario de atención</h2>
       </div>
-      <span className="text-center mt-5 text-xl font-bold">
-        De lunes a Viernes
-      </span>
-      <span className="text-center text-base">
-        08:30am - 12:00pm / 02:00pm - 07:00pm
-      </span>
-      <span className="text-center mt-5 text-xl font-bold">Sábados</span>
-      <span className="text-center text-base">08:30am - 07:00pm</span>
+
+      <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-md border border-white/50 space-y-6">
+        <div className="flex flex-col items-center text-center">
+          <span className="text-lg font-bold text-gray-800">Lunes a Viernes</span>
+          <span className="text-purple-600 font-medium mt-1">
+            08:30 am - 12:00 pm<br />02:00 pm - 07:00 pm
+          </span>
+        </div>
+
+        <div className="w-full h-px bg-purple-100"></div>
+
+        <div className="flex flex-col items-center text-center">
+          <span className="text-lg font-bold text-gray-800">Sábados</span>
+          <span className="text-purple-600 font-medium mt-1">
+            08:30 am - 07:00 pm
+          </span>
+        </div>
+      </div>
+
       <BackButton />
-    </main>
+    </div>
   );
 }

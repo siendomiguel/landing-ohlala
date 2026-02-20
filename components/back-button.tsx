@@ -34,7 +34,7 @@ const BackButton = () => {
   return (
     <button
       onClick={() => router.back()}
-      className="fixed bottom-4 right-4 bg-purple-700 text-white p-30 rounded-full shadow-md hover:bg-purple-600 transition"
+      className="fixed bottom-6 right-4 bg-purple-700 text-white p-3 rounded-full shadow-lg hover:bg-purple-600 transition z-50 md:hidden"
     >
       <Iconoir />
     </button>
