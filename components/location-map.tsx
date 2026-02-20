@@ -1,6 +1,18 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { Map as MapIcon, MapPin } from 'lucide-react';
 
+const APPLE_MAPS_URL = 'https://maps.apple.com/place?place-id=I11E0F80593BAAFAD&address=Calle+10+10-19%2C+Oca%C3%B1a%2C+Norte+de+Santander%2C+Colombia&coordinate=8.2335155%2C-73.3551133&name=Oh+La+La+Estudio+De+Belleza&_provider=9902';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/2vSR86uwminQiJsCA';
+
 export default function LocationMap() {
+    const [mapsUrl, setMapsUrl] = useState(GOOGLE_MAPS_URL);
+
+    useEffect(() => {
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        setMapsUrl(isIOS ? APPLE_MAPS_URL : GOOGLE_MAPS_URL);
+    }, []);
     return (
         <section className="w-full bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-white/50 relative overflow-hidden group">
             <div className="flex items-center space-x-2 mb-4">
@@ -23,7 +35,7 @@ export default function LocationMap() {
 
                 {/* Overlay button */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <a href="https://maps.app.goo.gl/2vSR86uwminQiJsCA" target="_blank" rel="noopener noreferrer" className="bg-purple-600/90 backdrop-blur-md text-white px-5 py-2.5 rounded-full font-medium shadow-lg hover:bg-purple-700 pointer-events-auto transition-colors flex items-center space-x-2 transform hover:scale-105 active:scale-95 duration-200">
+                    <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="bg-purple-600/90 backdrop-blur-md text-white px-5 py-2.5 rounded-full font-medium shadow-lg hover:bg-purple-700 pointer-events-auto transition-colors flex items-center space-x-2 transform hover:scale-105 active:scale-95 duration-200">
                         <MapPin className="w-4 h-4" />
                         <span>Abrir en Maps</span>
                     </a>
