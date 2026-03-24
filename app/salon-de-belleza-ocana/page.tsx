@@ -53,7 +53,7 @@ export default function SalonDeBellezaOcana() {
       <div className="flex flex-col space-y-6 w-full pb-8">
         {/* Título */}
         <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
-          <h2 className="text-xl font-bold">Salón de Belleza en Ocaña</h2>
+          <h1 className="text-xl font-bold">Salón de Belleza en Ocaña</h1>
           <p className="text-purple-600 text-sm mt-1">Tu estudio de belleza de confianza en el centro</p>
         </div>
 

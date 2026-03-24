@@ -43,7 +43,7 @@ export default function PestanasOcana() {
 
       <div className="flex flex-col space-y-6 w-full pb-8">
         <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
-          <h2 className="text-xl font-bold">Pestañas en Ocaña Centro</h2>
+          <h1 className="text-xl font-bold">Pestañas en Ocaña Centro</h1>
           <p className="text-purple-600 text-sm mt-1">Extensiones de pestañas profesionales</p>
         </div>
 

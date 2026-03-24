@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     siteName: 'Ohlala Estudio de Belleza',
     locale: 'es_CO',
     type: 'website',
+    images: [
+      {
+        url: '/Ohlala-morado-oscuro.png',
+        width: 512,
+        height: 512,
+        alt: 'Ohlala Estudio de Belleza en Ocaña',
+      },
+    ],
   },
   robots: {
     index: true,
@@ -174,7 +182,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es-CO">
       {/* <GoogleTagManager gtmId="G-2VZJJ6N2E5" /> */}
 
       <Script
@@ -211,7 +219,7 @@ export default function RootLayout({
                 </div>
               </Link>
               <div>
-                <h1 className="text-3xl font-bold text-purple-900 tracking-tight">Estudio de Belleza</h1>
+                <p className="text-3xl font-bold text-purple-900 tracking-tight">Estudio de Belleza</p>
                 <p className="text-purple-600 font-medium mt-1">Realza tu belleza natural ✨</p>
               </div>
             </header>

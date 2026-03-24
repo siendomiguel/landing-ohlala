@@ -1,5 +1,15 @@
+import type { Metadata } from 'next';
 import BackButton from '../../components/back-button';
 import LocationMap from '../../components/location-map';
+
+export const metadata: Metadata = {
+  title: 'Ubicación - Calle 10 #10-19, Centro de Ocaña',
+  description:
+    'Encuentra Ohlala Estudio de Belleza en Ocaña. Calle 10 #10-19 local 1, centro de Ocaña, Norte de Santander. Pasos arriba del Hotel El Príncipe.',
+  alternates: {
+    canonical: '/location',
+  },
+};
 
 export default function Location() {
   return (

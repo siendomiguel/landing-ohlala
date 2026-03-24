@@ -15,6 +15,16 @@ export default function Home() {
 
   return (
     <div className="flex flex-col space-y-8 w-full">
+      {/* Intro Section */}
+      <section className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-md border border-white/50 text-center">
+        <h1 className="text-xl font-bold text-purple-900 mb-2">Salón de Belleza en Ocaña, Norte de Santander</h1>
+        <p className="text-gray-700 leading-relaxed">
+          Bienvenida a <strong className="text-purple-800">Ohlala Estudio de Belleza</strong>, tu salón de belleza
+          en el centro de Ocaña. Ofrecemos servicios profesionales de manicure, pedicure, cabello, maquillaje,
+          pestañas, cejas y depilación. Agenda tu cita por WhatsApp.
+        </p>
+      </section>
+
       {/* Links Section */}
       <section className="w-full space-y-4">
         {links.map((link) => {

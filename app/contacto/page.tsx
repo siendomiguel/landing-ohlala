@@ -1,11 +1,28 @@
+import type { Metadata } from 'next';
 import BackButton from '../../components/back-button';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Contacto - Agenda tu Cita por WhatsApp',
+  description:
+    'Contacta a Ohlala Estudio de Belleza en Ocaña. Agenda tu cita por WhatsApp al +57 321 260 0682. Atención de lunes a sábado.',
+  alternates: {
+    canonical: '/contacto',
+  },
+  openGraph: {
+    title: 'Contacto | Ohlala Estudio de Belleza en Ocaña',
+    description:
+      'Agenda tu cita de belleza por WhatsApp. Estamos en el centro de Ocaña, Norte de Santander.',
+    url: 'https://estudiodebellezaohlala.com/contacto',
+    type: 'website',
+  },
+};
 
 export default function Contacto() {
   return (
     <div className="flex flex-col space-y-6 w-full pb-8">
       <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
-        <h2 className="text-xl font-bold">Contáctanos</h2>
+        <h1 className="text-xl font-bold">Contáctanos</h1>
       </div>
 
       <a href="https://wa.me/573212600682" target="_blank" rel="noreferrer" className="block group">

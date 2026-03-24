@@ -1,11 +1,21 @@
+import type { Metadata } from 'next';
 import BackButton from '../../components/back-button';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Métodos de Pago - Efectivo, Nequi, Bancolombia y Davivienda',
+  description:
+    'Métodos de pago aceptados en Ohlala Estudio de Belleza en Ocaña. Paga con efectivo, transferencia Bancolombia, Nequi o Davivienda.',
+  alternates: {
+    canonical: '/payment-methods',
+  },
+};
 
 export default function PaymentMethods() {
   return (
     <div className="flex flex-col space-y-6 w-full pb-8">
       <div className="text-center bg-white/80 backdrop-blur-sm text-purple-800 py-4 px-8 rounded-2xl shadow-sm border border-white/50">
-        <h2 className="text-xl font-bold">Nuestros métodos de pago</h2>
+        <h1 className="text-xl font-bold">Nuestros métodos de pago</h1>
       </div>
 
       <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-md border border-white/50 space-y-6 flex flex-col items-center text-center">
