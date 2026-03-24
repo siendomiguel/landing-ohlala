@@ -8,8 +8,79 @@ import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Ohlala - Estudio de belleza',
-  description: 'Realza tu belleza',
+  title: {
+    default: 'Ohlala - Estudio de Belleza en Ocaña | Manicure, Pedicure, Cabello y más',
+    template: '%s | Ohlala Estudio de Belleza',
+  },
+  description:
+    'Estudio de belleza en Ocaña, Norte de Santander. Servicios profesionales de manicure, pedicure, cabello, maquillaje, pestañas y más. Agenda tu cita por WhatsApp.',
+  metadataBase: new URL('https://estudiodebellezaohlala.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Ohlala - Estudio de Belleza en Ocaña',
+    description:
+      'Servicios profesionales de belleza en Ocaña. Manicure, pedicure, cabello, maquillaje, pestañas y más. ¡Realza tu belleza natural!',
+    url: 'https://estudiodebellezaohlala.com',
+    siteName: 'Ohlala Estudio de Belleza',
+    locale: 'es_CO',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BeautySalon',
+  name: 'Ohlala - Estudio de Belleza',
+  url: 'https://estudiodebellezaohlala.com',
+  telephone: '+573212600682',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Calle 10 #10-19 local 1',
+    addressLocality: 'Ocaña',
+    addressRegion: 'Norte de Santander',
+    addressCountry: 'CO',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 8.2379,
+    longitude: -73.3564,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:30',
+      closes: '12:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '14:00',
+      closes: '19:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '08:30',
+      closes: '19:00',
+    },
+  ],
+  priceRange: '$$',
+  image: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -20,6 +91,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       {/* <GoogleTagManager gtmId="G-2VZJJ6N2E5" /> */}
+
+      <Script
+        id="json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       <Script
         id="gtm"
