@@ -1,6 +1,6 @@
 import BackButton from '../../components/back-button';
 
-const servicios = ['Cabello', 'Cejas', 'Depilación', 'Manicure', 'Maquillaje', 'Masajes', 'Pedicure', 'Pestañas'];
+const servicios = ['Cabello', 'Cejas', 'Depilación', 'Manicure', 'Maquillaje', 'Pedicure', 'Pestañas'];
 
 const StarIcon = () => (
   <svg

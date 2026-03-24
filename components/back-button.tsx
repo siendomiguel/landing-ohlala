@@ -7,7 +7,7 @@ const Iconoir = () => (
     width="24px"
     height="24px"
     viewBox="0 0 24 24"
-    stroke-width="1.5"
+    strokeWidth="1.5"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     color="#ffffff"
@@ -15,16 +15,16 @@ const Iconoir = () => (
     <path
       d="M11 6L5 12L11 18"
       stroke="#ffffff"
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
     <path
       d="M19 6L13 12L19 18"
       stroke="#ffffff"
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></path>
   </svg>
 );
