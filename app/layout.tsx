@@ -43,20 +43,32 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
+  '@id': 'https://estudiodebellezaohlala.com/#business',
   name: 'Ohlala - Estudio de Belleza',
+  alternateName: 'Estudio de Belleza Ohlala',
+  description:
+    'Salón de belleza profesional en el centro de Ocaña, Norte de Santander. Servicios de manicure, pedicure, cabello, maquillaje, pestañas, cejas y depilación.',
   url: 'https://estudiodebellezaohlala.com',
   telephone: '+573212600682',
+  image: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
+  logo: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Calle 10 #10-19 local 1',
     addressLocality: 'Ocaña',
     addressRegion: 'Norte de Santander',
+    postalCode: '546552',
     addressCountry: 'CO',
   },
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 8.2379,
     longitude: -73.3564,
+  },
+  areaServed: {
+    '@type': 'City',
+    name: 'Ocaña',
+    '@id': 'https://www.wikidata.org/wiki/Q1292029',
   },
   openingHoursSpecification: [
     {
@@ -79,8 +91,81 @@ const jsonLd = {
     },
   ],
   priceRange: '$$',
-  image: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
-  sameAs: [],
+  currenciesAccepted: 'COP',
+  paymentAccepted: 'Efectivo, Transferencia Bancolombia, Nequi, Davivienda',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de Belleza',
+    itemListElement: [
+      {
+        '@type': 'OfferCatalog',
+        name: 'Manicure',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Manicure tradicional' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Manicure semipermanente' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Uñas acrílicas' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Polygel' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sistema de acrílico' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Base rubber' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Pedicure',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pedicure tradicional' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Semipermanente' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exfoliación de pies' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Cabello',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tinte de un solo color' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tratamientos capilares' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Hidratación del cabello' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Keratina' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Cejas',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación con visagismo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación con cuchilla' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación con hilo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación con cera' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Depilación',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación de bozo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación de barba' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación de piernas' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación de abdomen' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Depilación zona púbica' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Pestañas',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pestañas pelo a pelo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pestañas por punto' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Maquillaje',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Maquillaje para eventos sociales' } },
+        ],
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

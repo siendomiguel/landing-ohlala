@@ -26,23 +26,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Pedicure Profesional en Ocaña',
-  provider: {
-    '@type': 'BeautySalon',
-    name: 'Ohlala - Estudio de Belleza',
-    url: 'https://estudiodebellezaohlala.com',
-    telephone: '+573212600682',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Calle 10 #10-19 local 1',
-      addressLocality: 'Ocaña',
-      addressRegion: 'Norte de Santander',
-      addressCountry: 'CO',
-    },
-  },
-  areaServed: {
-    '@type': 'City',
-    name: 'Ocaña',
-  },
+  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  areaServed: { '@type': 'City', name: 'Ocaña' },
   description:
     'Servicio profesional de pedicure en Ocaña centro. Spa de pies, tratamiento de uñas, esmaltado y cuidado completo de pies.',
 };

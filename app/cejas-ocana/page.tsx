@@ -26,19 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Depilación de Cejas en Ocaña',
-  provider: {
-    '@type': 'BeautySalon',
-    name: 'Ohlala - Estudio de Belleza',
-    url: 'https://estudiodebellezaohlala.com',
-    telephone: '+573212600682',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Calle 10 #10-19 local 1',
-      addressLocality: 'Ocaña',
-      addressRegion: 'Norte de Santander',
-      addressCountry: 'CO',
-    },
-  },
+  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Depilación y diseño de cejas profesional en Ocaña centro. Visagismo, cuchilla, hilo y cera.',
 };

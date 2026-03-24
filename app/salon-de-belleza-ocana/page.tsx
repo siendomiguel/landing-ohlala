@@ -23,24 +23,12 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'BeautySalon',
-  name: 'Ohlala - Estudio de Belleza',
-  url: 'https://estudiodebellezaohlala.com',
-  telephone: '+573212600682',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Calle 10 #10-19 local 1',
-    addressLocality: 'Ocaña',
-    addressRegion: 'Norte de Santander',
-    addressCountry: 'CO',
-  },
-  areaServed: {
-    '@type': 'City',
-    name: 'Ocaña',
-  },
+  '@type': 'WebPage',
+  name: 'Salón de Belleza en Ocaña - Ohlala Estudio de Belleza',
   description:
-    'Salón de belleza profesional en Ocaña centro. Servicios de manicure, pedicure, cabello, maquillaje, pestañas, cejas, depilación y masajes.',
-  priceRange: '$$',
+    'Salón de belleza profesional en Ocaña centro. Servicios de manicure, pedicure, cabello, maquillaje, pestañas, cejas y depilación.',
+  url: 'https://estudiodebellezaohlala.com/salon-de-belleza-ocana',
+  about: { '@id': 'https://estudiodebellezaohlala.com/#business' },
 };
 
 const serviciosDestacados = [
