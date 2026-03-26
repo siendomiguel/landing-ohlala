@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Extensiones de Pestañas en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Pestañas pelo a pelo y por punto en Ocaña. Extensiones profesionales para una mirada impactante.',
-    url: 'https://estudiodebellezaohlala.com/pestanas-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/pestanas-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Extensiones de Pestañas en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Extensiones de pestañas profesionales en Ocaña centro. Pelo a pelo y por punto.',
 };

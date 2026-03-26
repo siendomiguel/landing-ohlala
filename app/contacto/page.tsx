@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Contacto | Ohlala Estudio de Belleza en Ocaña',
     description:
       'Agenda tu cita de belleza por WhatsApp. Estamos en el centro de Ocaña, Norte de Santander.',
-    url: 'https://estudiodebellezaohlala.com/contacto',
+    url: 'https://ohlalaestudiodebelleza.com/contacto',
     type: 'website',
   },
 };

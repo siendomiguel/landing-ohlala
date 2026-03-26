@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Salón de Belleza en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Tu salón de belleza de confianza en Ocaña. Servicios profesionales de manicure, pedicure, cabello, maquillaje, pestañas y más.',
-    url: 'https://estudiodebellezaohlala.com/salon-de-belleza-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/salon-de-belleza-ocana',
     type: 'website',
   },
 };
@@ -27,8 +27,8 @@ const jsonLd = {
   name: 'Salón de Belleza en Ocaña - Ohlala Estudio de Belleza',
   description:
     'Salón de belleza profesional en Ocaña centro. Servicios de manicure, pedicure, cabello, maquillaje, pestañas, cejas y depilación.',
-  url: 'https://estudiodebellezaohlala.com/salon-de-belleza-ocana',
-  about: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  url: 'https://ohlalaestudiodebelleza.com/salon-de-belleza-ocana',
+  about: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
 };
 
 const serviciosDestacados = [

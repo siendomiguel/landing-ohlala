@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     'Estudio de belleza en Ocaña, Norte de Santander. Servicios profesionales de manicure, pedicure, cabello, maquillaje, pestañas y más. Agenda tu cita por WhatsApp.',
-  metadataBase: new URL('https://estudiodebellezaohlala.com'),
+  metadataBase: new URL('https://ohlalaestudiodebelleza.com'),
   alternates: {
     canonical: '/',
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Ohlala - Estudio de Belleza en Ocaña',
     description:
       'Servicios profesionales de belleza en Ocaña. Manicure, pedicure, cabello, maquillaje, pestañas y más. ¡Realza tu belleza natural!',
-    url: 'https://estudiodebellezaohlala.com',
+    url: 'https://ohlalaestudiodebelleza.com',
     siteName: 'Ohlala Estudio de Belleza',
     locale: 'es_CO',
     type: 'website',
@@ -51,15 +51,15 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
-  '@id': 'https://estudiodebellezaohlala.com/#business',
+  '@id': 'https://ohlalaestudiodebelleza.com/#business',
   name: 'Ohlala - Estudio de Belleza',
   alternateName: 'Estudio de Belleza Ohlala',
   description:
     'Salón de belleza profesional en el centro de Ocaña, Norte de Santander. Servicios de manicure, pedicure, cabello, maquillaje, pestañas, cejas y depilación.',
-  url: 'https://estudiodebellezaohlala.com',
+  url: 'https://ohlalaestudiodebelleza.com',
   telephone: '+573212600682',
-  image: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
-  logo: 'https://estudiodebellezaohlala.com/Ohlala-morado-oscuro.png',
+  image: 'https://ohlalaestudiodebelleza.com/Ohlala-morado-oscuro.png',
+  logo: 'https://ohlalaestudiodebelleza.com/Ohlala-morado-oscuro.png',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Calle 10 #10-19 local 1',

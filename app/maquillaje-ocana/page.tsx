@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Maquillaje Profesional en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Maquillaje profesional para eventos sociales en Ocaña. ¡Luce perfecta en tu evento especial!',
-    url: 'https://estudiodebellezaohlala.com/maquillaje-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/maquillaje-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Maquillaje Profesional en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Servicio de maquillaje profesional para eventos sociales en Ocaña centro.',
 };

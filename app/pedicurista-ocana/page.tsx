@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Pedicurista Profesional en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Servicio de pedicure profesional en el centro de Ocaña. Spa de pies, tratamiento de uñas, esmaltado y más. ¡Agenda tu cita por WhatsApp!',
-    url: 'https://estudiodebellezaohlala.com/pedicurista-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/pedicurista-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Pedicure Profesional en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description:
     'Servicio profesional de pedicure en Ocaña centro. Spa de pies, tratamiento de uñas, esmaltado y cuidado completo de pies.',

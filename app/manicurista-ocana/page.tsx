@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Manicurista Profesional en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Servicio de manicure profesional en el centro de Ocaña. Uñas acrílicas, semipermanente, diseño de uñas y más. ¡Agenda tu cita por WhatsApp!',
-    url: 'https://estudiodebellezaohlala.com/manicurista-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/manicurista-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Manicure Profesional en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description:
     'Servicio profesional de manicure en Ocaña centro. Uñas acrílicas, semipermanente, diseño de uñas y cuidado de manos.',

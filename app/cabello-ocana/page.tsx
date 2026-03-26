@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Estilista de Cabello en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Servicios profesionales de cabello en Ocaña. Tintes, tratamientos capilares, hidratación y queratina.',
-    url: 'https://estudiodebellezaohlala.com/cabello-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/cabello-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Servicios de Cabello en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Servicios profesionales de cabello en Ocaña centro. Tintes, tratamientos capilares, hidratación y queratina.',
 };

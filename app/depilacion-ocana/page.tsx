@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Depilación Profesional en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Servicio de depilación profesional en Ocaña. Bozo, barba, espalda, piernas, abdomen y más.',
-    url: 'https://estudiodebellezaohlala.com/depilacion-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/depilacion-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Depilación Profesional en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Servicio profesional de depilación en Ocaña centro. Bozo, barba, espalda, piernas, abdomen y zona púbica.',
 };

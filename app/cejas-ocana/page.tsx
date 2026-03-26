@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Depilación de Cejas en Ocaña Centro | Ohlala Estudio de Belleza',
     description:
       'Diseño y depilación de cejas profesional en Ocaña. Visagismo, cuchilla, hilo y cera.',
-    url: 'https://estudiodebellezaohlala.com/cejas-ocana',
+    url: 'https://ohlalaestudiodebelleza.com/cejas-ocana',
     type: 'website',
   },
 };
@@ -26,7 +26,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Depilación de Cejas en Ocaña',
-  provider: { '@id': 'https://estudiodebellezaohlala.com/#business' },
+  provider: { '@id': 'https://ohlalaestudiodebelleza.com/#business' },
   areaServed: { '@type': 'City', name: 'Ocaña' },
   description: 'Depilación y diseño de cejas profesional en Ocaña centro. Visagismo, cuchilla, hilo y cera.',
 };

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Servicios de Belleza | Ohlala Estudio de Belleza en Ocaña',
     description:
       'Servicios profesionales de belleza en Ocaña: manicure, pedicure, cabello, cejas, depilación, maquillaje y pestañas.',
-    url: 'https://estudiodebellezaohlala.com/services',
+    url: 'https://ohlalaestudiodebelleza.com/services',
     type: 'website',
   },
 };
